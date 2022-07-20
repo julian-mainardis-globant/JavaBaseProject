@@ -2,9 +2,16 @@ package com.mobile.tandil.javabaseproject.mvp.contract;
 
 public interface ParkingContract {
 
-    interface Model {}
+    interface Model {
+        void setParkingAvailable(int parkingAvailable);
+        int getParkingAvailable();
+    }
 
-    interface View {}
+    interface View {
+        void showNumberOfParking(String numberOfParking);
+    }
 
-    interface Presenter {}
+    interface Presenter {
+        void onShowButtonPressed();
+    }
 }

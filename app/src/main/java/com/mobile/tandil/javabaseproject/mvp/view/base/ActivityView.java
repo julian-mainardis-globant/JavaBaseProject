@@ -1,6 +1,7 @@
 package com.mobile.tandil.javabaseproject.mvp.view.base;
 
 import android.app.Activity;
+import android.content.Context;
 
 import androidx.annotation.Nullable;
 
@@ -14,5 +15,12 @@ public class ActivityView {
     }
 
     @Nullable
-    public Activity getActivity() { return activityRef.get(); }
+    public Activity getActivity() {
+        return activityRef.get();
+    }
+
+    @Nullable
+    public Context getContext() {
+        return getActivity();
+    }
 }
