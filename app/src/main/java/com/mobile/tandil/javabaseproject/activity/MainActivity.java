@@ -1,16 +1,15 @@
 package com.mobile.tandil.javabaseproject.activity;
 
 import android.os.Bundle;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.mobile.tandil.javabaseproject.databinding.ActivityMainBinding;
+import com.mobile.tandil.javabaseproject.listener.ListenerDialogFragment;
 import com.mobile.tandil.javabaseproject.mvp.contract.ParkingContract;
 import com.mobile.tandil.javabaseproject.mvp.model.ParkingModel;
 import com.mobile.tandil.javabaseproject.mvp.presenter.ParkingPresenter;
 import com.mobile.tandil.javabaseproject.mvp.view.ParkingView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements ListenerDialogFragment {
 
     private ParkingContract.Presenter presenter;
     private ActivityMainBinding binding;
@@ -26,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setListeners() {
-        binding.buttonMainActivity.setOnClickListener(view -> presenter.onShowButtonPressed());
+        binding.buttonMainActivity.setOnClickListener(view -> presenter.onShowButtonPressed(this));
+    }
+
+    @Override
+    public void listenAvailableSpaces(String availableSpaces) {
+        presenter.listenParkingAvailable(availableSpaces);
     }
 }

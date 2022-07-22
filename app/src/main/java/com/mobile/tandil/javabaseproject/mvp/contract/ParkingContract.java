@@ -1,5 +1,7 @@
 package com.mobile.tandil.javabaseproject.mvp.contract;
 
+import com.mobile.tandil.javabaseproject.listener.ListenerDialogFragment;
+
 public interface ParkingContract {
 
     interface Model {
@@ -8,10 +10,12 @@ public interface ParkingContract {
     }
 
     interface View {
+        void showDialogFragment(ListenerDialogFragment listenerDialogFragment);
         void showNumberOfParking(String numberOfParking);
     }
 
     interface Presenter {
-        void onShowButtonPressed();
+        void onShowButtonPressed(ListenerDialogFragment listenerDialogFragment);
+        void listenParkingAvailable(String parkingAvailable);
     }
 }
