@@ -8,7 +8,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 
 public class ReservationModel implements ReservationContract.Model {
-
     ParkingDatabase database;
 
     public ReservationModel(ParkingDatabase database) {

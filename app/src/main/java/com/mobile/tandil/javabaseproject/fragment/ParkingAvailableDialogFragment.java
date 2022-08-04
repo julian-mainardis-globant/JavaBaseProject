@@ -14,7 +14,6 @@ import com.mobile.tandil.javabaseproject.mvp.presenter.DialogPresenter;
 import com.mobile.tandil.javabaseproject.mvp.view.DialogView;
 
 public class ParkingAvailableDialogFragment extends DialogFragment {
-
     private DialogContract.Presenter presenter;
     private static final String LISTENER_KEY = "LISTENER_KEY";
     public static final String TAG = "PARKING_AVAILABLE_DIALOG_FRAGMENT";

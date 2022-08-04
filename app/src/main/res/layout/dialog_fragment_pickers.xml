@@ -13,7 +13,7 @@
             android:id="@+id/date_picker_dialog_fragment"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            app:layout_constraintBottom_toTopOf="@+id/time_picker_dialog_fragment"
+            app:layout_constraintBottom_toTopOf="@id/time_picker_dialog_fragment"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -26,7 +26,7 @@
             android:timePickerMode="clock"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/date_picker_dialog_fragment" />
+            app:layout_constraintTop_toBottomOf="@id/date_picker_dialog_fragment" />
 
         <Button
             android:id="@+id/button_accept_pickers"
@@ -36,6 +36,6 @@
             android:text="@string/accept_button_picker_dialog_fragment"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/time_picker_dialog_fragment" />
+            app:layout_constraintTop_toBottomOf="@id/time_picker_dialog_fragment" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -13,7 +13,6 @@ import com.mobile.tandil.javabaseproject.mvp.view.ReservationView;
 import java.util.Calendar;
 
 public class ReservationActivity extends AppCompatActivity implements ListenerPickers {
-
     private ReservationContract.Presenter presenter;
     private ActivityReservationBinding binding;
 

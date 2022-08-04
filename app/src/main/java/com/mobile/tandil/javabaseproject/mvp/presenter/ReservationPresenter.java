@@ -1,6 +1,5 @@
 package com.mobile.tandil.javabaseproject.mvp.presenter;
 
-import com.mobile.tandil.javabaseproject.entity.Reservation;
 import com.mobile.tandil.javabaseproject.listener.ListenerPickers;
 import com.mobile.tandil.javabaseproject.mvp.contract.ReservationContract;
 import com.mobile.tandil.javabaseproject.util.DateUtils;
@@ -8,7 +7,6 @@ import com.mobile.tandil.javabaseproject.util.ValidationEnum;
 import java.util.Calendar;
 
 public class ReservationPresenter implements ReservationContract.Presenter {
-
     private final ReservationContract.View view;
     private final ReservationContract.Model model;
 

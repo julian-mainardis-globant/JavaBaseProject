@@ -55,7 +55,7 @@
         android:hint="@string/parking_number_input_text_reservation_activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_ending_day_reservation_activity">
+        app:layout_constraintTop_toBottomOf="@id/text_view_ending_day_reservation_activity">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_number_of_parking_reservation_activity"
@@ -73,7 +73,7 @@
         android:hint="@string/code_input_text_reservation_activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_text_number_of_parking_reservation_activity">
+        app:layout_constraintTop_toBottomOf="@id/input_text_number_of_parking_reservation_activity">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/edit_text_code_reservation_activity"
@@ -91,5 +91,5 @@
         android:text="@string/button_reservation_activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_code_reservation_activity" />
+        app:layout_constraintTop_toBottomOf="@id/input_code_reservation_activity" />
 </androidx.constraintlayout.widget.ConstraintLayout>

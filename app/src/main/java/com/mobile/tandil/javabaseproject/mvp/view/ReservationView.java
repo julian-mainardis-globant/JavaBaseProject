@@ -13,7 +13,6 @@ import com.mobile.tandil.javabaseproject.mvp.contract.ReservationContract;
 import com.mobile.tandil.javabaseproject.mvp.view.base.ActivityView;
 
 public class ReservationView extends ActivityView implements ReservationContract.View {
-
     private final ActivityReservationBinding binding;
 
     public ReservationView(Activity activity, ActivityReservationBinding binding) {

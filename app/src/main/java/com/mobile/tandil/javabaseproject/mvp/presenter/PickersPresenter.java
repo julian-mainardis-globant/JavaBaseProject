@@ -4,7 +4,6 @@ import com.mobile.tandil.javabaseproject.listener.ListenerPickers;
 import com.mobile.tandil.javabaseproject.mvp.contract.PickersContract;
 
 public class PickersPresenter implements PickersContract.Presenter {
-
     private final PickersContract.View view;
     private final Boolean startOrEnd;
 
