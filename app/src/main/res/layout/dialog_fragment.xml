@@ -20,16 +20,18 @@
         android:id="@+id/input_dialog_fragment"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:ems="@integer/input_dialog_fragment_ems_value"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_dialog_fragment" />
 
     <Button
         android:id="@+id/button_dialog_fragment"
+        style="@style/button_default_style"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/cardview_dark_background"
-        android:text="@string/text_button_dialog_fragment"
+        android:text="@string/accept_button_picker_dialog_fragment"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/input_dialog_fragment" />

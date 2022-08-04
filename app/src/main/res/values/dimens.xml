@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="main_activity_count_text_margin_top">20dp</dimen>
+    <dimen name="margin_between_elements">20dp</dimen>
     <dimen name="dialog_fragment_padding">10dp</dimen>
 </resources>
 

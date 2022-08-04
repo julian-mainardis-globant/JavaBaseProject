@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="button_default_style">
+        <item name="android:layout_margin">@dimen/margin_between_elements</item>
+        <item name="backgroundTint">@color/cardview_dark_background</item>
+    </style>
+</resources>

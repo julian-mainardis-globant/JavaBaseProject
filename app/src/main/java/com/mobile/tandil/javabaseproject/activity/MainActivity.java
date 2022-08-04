@@ -2,6 +2,7 @@ package com.mobile.tandil.javabaseproject.activity;
 
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
+import com.mobile.tandil.javabaseproject.database.ParkingDatabase;
 import com.mobile.tandil.javabaseproject.databinding.ActivityMainBinding;
 import com.mobile.tandil.javabaseproject.listener.ListenerDialogFragment;
 import com.mobile.tandil.javabaseproject.mvp.contract.ParkingContract;
@@ -20,12 +21,13 @@ public class MainActivity extends AppCompatActivity implements ListenerDialogFra
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        presenter = new ParkingPresenter(new ParkingModel(), new ParkingView(this, this.binding));
+        presenter = new ParkingPresenter(new ParkingModel(ParkingDatabase.getInstance()), new ParkingView(this, this.binding));
         setListeners();
     }
 
     public void setListeners() {
-        binding.buttonMainActivity.setOnClickListener(view -> presenter.onShowButtonPressed(this));
+        binding.buttonMainActivity.setOnClickListener(view -> presenter.onShowSpacesButtonPressed(this));
+        binding.buttonReservationActivity.setOnClickListener(view -> presenter.onShowReservationButtonPressed());
     }
 
     @Override
