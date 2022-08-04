@@ -6,7 +6,6 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public class ParkingDatabase {
-
     private final HashMap<Integer, ArrayList<Reservation>> hashMap = new HashMap<>();
     private Integer parkingLots = Constants.INVALID_PARKING_LOTS;
     private static ParkingDatabase instance = null;
@@ -39,5 +38,9 @@ public class ParkingDatabase {
 
     public void setParkingLots(int parkingLots) {
         this.parkingLots = parkingLots;
+    }
+
+    public void clearDatabase() {
+        hashMap.clear();
     }
 }

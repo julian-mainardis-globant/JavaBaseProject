@@ -11,7 +11,6 @@ import com.mobile.tandil.javabaseproject.mvp.presenter.ParkingPresenter;
 import com.mobile.tandil.javabaseproject.mvp.view.ParkingView;
 
 public class MainActivity extends AppCompatActivity implements ListenerDialogFragment {
-
     private ParkingContract.Presenter presenter;
     private ActivityMainBinding binding;
 

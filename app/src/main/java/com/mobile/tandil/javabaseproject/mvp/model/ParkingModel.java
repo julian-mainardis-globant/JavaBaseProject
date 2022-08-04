@@ -5,7 +5,6 @@ import com.mobile.tandil.javabaseproject.mvp.contract.ParkingContract;
 import com.mobile.tandil.javabaseproject.util.Constants;
 
 public class ParkingModel implements ParkingContract.Model {
-
     private int parkingAvailable = Constants.INVALID_PARKING_LOTS;
     private ParkingDatabase database;
 

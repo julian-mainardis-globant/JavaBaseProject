@@ -4,7 +4,6 @@ import com.mobile.tandil.javabaseproject.listener.ListenerDialogFragment;
 import com.mobile.tandil.javabaseproject.mvp.contract.DialogContract;
 
 public class DialogPresenter implements DialogContract.Presenter {
-
     private final DialogContract.View view;
 
     public DialogPresenter(DialogContract.View view) {

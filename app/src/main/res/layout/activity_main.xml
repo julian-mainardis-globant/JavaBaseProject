@@ -36,6 +36,6 @@
         android:text="@string/button_reservation_activity"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_view_main_activity" />
+        app:layout_constraintTop_toBottomOf="@id/text_view_main_activity" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

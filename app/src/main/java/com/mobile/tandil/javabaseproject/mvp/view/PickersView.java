@@ -10,7 +10,6 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 
 public class PickersView extends FragmentView implements PickersContract.View {
-
     private final DialogFragmentPickersBinding binding;
 
     public PickersView(Fragment fragment, DialogFragmentPickersBinding binding) {

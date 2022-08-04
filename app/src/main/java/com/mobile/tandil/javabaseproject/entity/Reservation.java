@@ -4,7 +4,6 @@ import com.mobile.tandil.javabaseproject.util.DateUtils;
 import java.util.Calendar;
 
 public class Reservation {
-
     private final Calendar startingDate;
     private final Calendar endingDate;
     private final String key;

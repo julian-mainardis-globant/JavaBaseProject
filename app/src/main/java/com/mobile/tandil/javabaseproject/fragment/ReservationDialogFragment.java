@@ -13,7 +13,6 @@ import com.mobile.tandil.javabaseproject.mvp.presenter.PickersPresenter;
 import com.mobile.tandil.javabaseproject.mvp.view.PickersView;
 
 public class ReservationDialogFragment extends DialogFragment {
-
     PickersContract.Presenter presenter;
     private static final String LISTENER_PICKERS_KEY = "LISTENER_PICKERS_KEY";
     DialogFragmentPickersBinding binding;
