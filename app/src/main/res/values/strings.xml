@@ -2,6 +2,22 @@
     <string name="app_name">JavaBaseProject</string>
     <string name="text_view_main_activity">Press the button to set the number of available parking</string>
     <string name="text_button_main_activity">Parking Available</string>
-    <string name="text_button_dialog_fragment">Aceptar</string>
-    <string name="text_view_dialog_fragment">Indique el numero de parkings disponibles</string>
+    <string name="text_view_dialog_fragment">Put the number of available parkings</string>
+    <string name="button_reservation_activity">Make the reservation</string>
+    <string name="reservation_button_main_activity">Please set the number of parkings available</string>
+    <string name="starting_day_button_reservation_activity">Starting day</string>
+    <string name="parking_number_input_text_reservation_activity">Parking number:</string>
+    <string name="parking_number_edit_text_reservation_activity">Please pick a number of parking</string>
+    <string name="ending_day_button_reservation_activity">Ending day</string>
+    <string name="code_input_text_reservation_activity">Code:</string>
+    <string name="code_edit_text_reservation_activity">Please put your code</string>
+    <string name="text_view_starting_day_reservation_activity">Click above to select the starting day</string>
+    <string name="text_view_ending_day_reservation_activity">Click above to select the ending day</string>
+    <string name="accept_button_picker_dialog_fragment">Accept</string>
+    <string name="reservation_saved">Reservation saved</string>
+    <string name="complete_fields">You need to complete all the fields</string>
+    <string name="start_date_before_now">The starting date cannot be before than now</string>
+    <string name="ending_before_starting">The ending date cannot be before than the starting date</string>
+    <string name="park_number_bigger_than_total">The parking number is bigger than the total amount of parkings</string>
+    <string name="date_already_reserved">That date is already reserved in that number of parking</string>
 </resources>

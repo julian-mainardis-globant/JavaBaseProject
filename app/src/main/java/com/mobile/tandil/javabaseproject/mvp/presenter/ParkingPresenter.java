@@ -2,6 +2,7 @@ package com.mobile.tandil.javabaseproject.mvp.presenter;
 
 import com.mobile.tandil.javabaseproject.listener.ListenerDialogFragment;
 import com.mobile.tandil.javabaseproject.mvp.contract.ParkingContract;
+import com.mobile.tandil.javabaseproject.util.Constants;
 
 public class ParkingPresenter implements ParkingContract.Presenter {
 
@@ -14,13 +15,26 @@ public class ParkingPresenter implements ParkingContract.Presenter {
     }
 
     @Override
-    public void onShowButtonPressed(ListenerDialogFragment listenerDialogFragment) {
+    public void onShowSpacesButtonPressed(ListenerDialogFragment listenerDialogFragment) {
         view.showDialogFragment(listenerDialogFragment);
     }
 
     @Override
     public void listenParkingAvailable(String parkingAvailable) {
-        model.setParkingAvailable(Integer.parseInt(parkingAvailable));
-        view.showNumberOfParking(String.valueOf(model.getParkingAvailable()));
+        if (parkingAvailable.isEmpty()) {
+            view.showToastEmptyAvailableSpaces();
+        } else {
+            model.setParkingAvailable(Integer.parseInt(parkingAvailable));
+            view.showNumberOfParking(String.valueOf(model.getParkingAvailable()));
+        }
+    }
+
+    @Override
+    public void onShowReservationButtonPressed() {
+        if (model.getParkingAvailable() > Constants.INVALID_PARKING_LOTS) {
+            view.showReservationActivity();
+        } else {
+            view.showToastEmptyAvailableSpaces();
+        }
     }
 }
